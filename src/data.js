@@ -10,9 +10,9 @@ export const PHOTOS = {
   charcoal: CDN + 'hf_20261006_091702_b26ebd71-687e-4829-80c6-e28b289dda72.png',
   briquettes: '/images/briquettes.webp',
   industrial: '/images/industrial.webp',
-  catFirewood: CDN + 'hf_20261006_091741_c46a943d-5613-49ae-b909-2f42f33faa30.png',
-  catCharcoal: CDN + 'hf_20261006_091712_4d583e43-9b2b-4897-9e28-c85883b4170c.png',
-  catIndustrial: CDN + 'hf_20261006_091641_b39551da-12b5-41ea-a480-de4dae5ae29d.png',
+  catFirewood: '/images/cat-firewood.webp',
+  catCharcoal: '/images/cat-charcoal.webp',
+  catIndustrial: '/images/cat-industrial.webp',
   hero: '/images/hero.webp',
 }
 
