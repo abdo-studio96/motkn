@@ -1,23 +1,41 @@
 // All content in this file is sample (demo) data for the interface only.
 
+// AI-generated demo photos (Higgsfield). If one fails to load, the SVG art is shown instead.
+const CDN = 'https://d8j0ntlcm91z4.cloudfront.net/user_3I2Raov2D23bJPBrxeutTeAQSTK/'
+export const PHOTOS = {
+  acacia: CDN + 'hf_20261006_091703_a3b5036e-06cf-4b2e-a832-94532b5f7699.png',
+  sidr: CDN + 'hf_20261006_091702_f607bc2d-545d-4691-b130-addd9647187b.png',
+  olive: CDN + 'hf_20261006_091640_22ed9333-8c84-4c22-ab7b-0252c6b79c7d.png',
+  charcoal: CDN + 'hf_20261006_091702_b26ebd71-687e-4829-80c6-e28b289dda72.png',
+  briquettes: CDN + 'hf_20261006_091640_40c80863-bc2a-4a37-8b36-1d930016a69d.png',
+  industrial: CDN + 'hf_20261006_091640_fd3b8e73-de65-4f90-823d-fb2cf611232b.png',
+  catFirewood: CDN + 'hf_20261006_091741_c46a943d-5613-49ae-b909-2f42f33faa30.png',
+  catCharcoal: CDN + 'hf_20261006_091712_4d583e43-9b2b-4897-9e28-c85883b4170c.png',
+  catIndustrial: CDN + 'hf_20261006_091641_b39551da-12b5-41ea-a480-de4dae5ae29d.png',
+  hero: CDN + 'hf_20261006_091712_ded51ca1-3f69-439f-9891-d263b52c3045.png',
+}
+
 export const CATEGORIES = [
   {
     id: 'firewood',
     name: 'حطب',
     description: 'حطب مختار للتدفئة والشواء والجلسات الخارجية، بأحجام وكميات متنوعة.',
     art: 'logs-acacia',
+    image: PHOTOS.catFirewood,
   },
   {
     id: 'charcoal',
     name: 'فحم',
     description: 'فحم للشواء والمجالس والاستخدام المنزلي، بأنواع وأوزان مختلفة.',
     art: 'charcoal-lump',
+    image: PHOTOS.catCharcoal,
   },
   {
     id: 'industrial',
     name: 'فحم صناعي',
     description: 'كميات تجارية للمطاعم والمنشآت، بتعبئة مناسبة للتوريد المنتظم.',
     art: 'industrial-bags',
+    image: PHOTOS.catIndustrial,
   },
 ]
 
@@ -45,6 +63,7 @@ export const PRODUCTS = [
     cities: ['الرياض', 'القصيم', 'حائل'],
     origin: 'مستورد — بلد المنشأ موضّح في الفاتورة',
     art: 'logs-acacia',
+    image: PHOTOS.acacia,
     description: 'قطع متوسطة الحجم مجففة، مناسبة للجلسات الشتوية والشواء في الهواء الطلق.',
     specs: ['مجفف', 'تقطيع متوسط', 'ربطات محكمة'],
   },
@@ -58,6 +77,7 @@ export const PRODUCTS = [
     cities: ['جدة', 'مكة المكرمة', 'المدينة المنورة'],
     origin: 'مستورد — شهادة منشأ مرفقة',
     art: 'logs-sidr',
+    image: PHOTOS.sidr,
     description: 'حطب كثيف بلون داكن ورائحة مميزة، يُفضَّل للمجالس والضيافة.',
     specs: ['كثافة عالية', 'تقطيع كبير', 'رائحة مميزة'],
   },
@@ -71,6 +91,7 @@ export const PRODUCTS = [
     cities: ['الدمام', 'الخبر', 'الرياض'],
     origin: 'مستورد — بيانات الشحنة متاحة عند الطلب',
     art: 'logs-olive',
+    image: PHOTOS.olive,
     description: 'قطع صغيرة مرتبة في كرتون، سهلة التخزين ومناسبة للمدافئ المنزلية.',
     specs: ['قطع صغيرة', 'تعبئة كرتونية', 'سهل التخزين'],
   },
@@ -84,6 +105,7 @@ export const PRODUCTS = [
     cities: ['جدة', 'الرياض', 'تبوك'],
     origin: 'مستورد — بلد المنشأ موضّح على العبوة',
     art: 'charcoal-lump',
+    image: PHOTOS.charcoal,
     description: 'قطع فحم متوسطة وكبيرة، اشتعال ثابت ومناسب للشواء المنزلي.',
     specs: ['قطع متوسطة وكبيرة', 'دخان قليل', 'كيس مقوّى'],
   },
@@ -97,6 +119,7 @@ export const PRODUCTS = [
     cities: ['الرياض', 'الدمام', 'أبها'],
     origin: 'مستورد — بيانات المصنع على العبوة',
     art: 'charcoal-briquette',
+    image: PHOTOS.briquettes,
     description: 'أقراص منتظمة الحجم، احتراق متجانس ورماد أقل، مناسبة للمجالس.',
     specs: ['أقراص منتظمة', 'رماد أقل', 'تعبئة 5 كجم'],
   },
@@ -110,6 +133,7 @@ export const PRODUCTS = [
     cities: ['الرياض', 'جدة', 'الدمام', 'المدينة المنورة'],
     origin: 'مستورد — مستندات الشحنة متاحة للمنشآت',
     art: 'industrial-bags',
+    image: PHOTOS.industrial,
     description: 'توريد بالجملة للمطاعم والمنشآت، بتعبئة أكياس 20 كجم على منصات.',
     specs: ['أكياس 20 كجم', 'توريد دوري', 'فاتورة للمنشآت'],
   },

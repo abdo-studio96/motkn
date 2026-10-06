@@ -44,7 +44,7 @@ export default function Footer({ onBecomeSupplier, onPickCategory }) {
       <div className="relative border-t border-white/10">
         <div className="mx-auto flex max-w-7xl flex-col gap-2 px-4 py-6 text-xs text-sand-100/50 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
           <p>© {new Date().getFullYear()} سوق الحطب. جميع الحقوق محفوظة.</p>
-          <p>جميع المنتجات والموردين والأسعار وشارات التحقق المعروضة بيانات تجريبية.</p>
+          <p>جميع المنتجات والموردين والأسعار وشارات التحقق المعروضة بيانات تجريبية، والصور مولّدة بالذكاء الاصطناعي لأغراض العرض.</p>
         </div>
       </div>
     </footer>

@@ -1,4 +1,4 @@
-import { useId } from 'react'
+import { useId, useState } from 'react'
 
 // Hand-drawn SVG product imagery, so the page renders fully offline.
 // To use photos instead, give a product an `image` URL; see ProductImage below.
@@ -290,9 +290,20 @@ export default function ProductArt({ variant = 'logs-acacia', className = '', ti
   )
 }
 
-export function ProductImage({ product, className = '' }) {
-  if (product.image) {
-    return <img src={product.image} alt={product.name} loading="lazy" className={`object-cover ${className}`} />
+// Shows the item's photo, falling back to the SVG art when there is no photo or it fails to load.
+export function ProductImage({ product, className = '', eager = false }) {
+  const [failed, setFailed] = useState(false)
+  if (product.image && !failed) {
+    return (
+      <img
+        src={product.image}
+        alt={product.name}
+        loading={eager ? 'eager' : 'lazy'}
+        decoding="async"
+        onError={() => setFailed(true)}
+        className={`bg-sand-200 object-cover ${className}`}
+      />
+    )
   }
   return <ProductArt variant={product.art} title={product.name} className={className} />
 }

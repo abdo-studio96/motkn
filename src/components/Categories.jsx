@@ -1,6 +1,6 @@
 import { CATEGORIES, PRODUCTS } from '../data'
 import { useReveal } from '../hooks'
-import ProductArt from './ProductArt'
+import { ProductImage } from './ProductArt'
 import SectionHeading from './SectionHeading'
 import Icon from './Icon'
 
@@ -25,7 +25,7 @@ export default function Categories({ activeType, onSelect }) {
               }`}
             >
               <div className="relative overflow-hidden">
-                <ProductArt variant={c.art} title={c.name} className="block aspect-[16/10] w-full transition-transform duration-700 group-hover:scale-105" />
+                <ProductImage product={c} className="block aspect-[16/10] w-full transition-transform duration-700 group-hover:scale-105" />
                 {active && (
                   <span className="absolute top-3 right-3 inline-flex items-center gap-1 rounded-full bg-forest-700 px-3 py-1 text-xs font-bold text-white">
                     <Icon name="check" className="size-3.5" strokeWidth={2.5} /> محدد

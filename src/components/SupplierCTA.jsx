@@ -1,6 +1,7 @@
 import { useReveal } from '../hooks'
 import Icon from './Icon'
-import ProductArt from './ProductArt'
+import { ProductImage } from './ProductArt'
+import { PHOTOS } from '../data'
 
 const PERKS = [
   { icon: 'users', title: 'وصول لمشترين جدد', text: 'اعرض منتجاتك للأفراد والمنشآت في المدن التي تخدمها.' },
@@ -45,12 +46,12 @@ export default function SupplierCTA({ onBecomeSupplier }) {
           <div className="relative hidden lg:block">
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4 pt-10">
-                <ProductArt variant="logs-sidr" title="حطب" className="block aspect-square w-full rounded-3xl shadow-xl" />
-                <ProductArt variant="charcoal-briquette" title="فحم أقراص" className="block aspect-[4/3] w-full rounded-3xl shadow-xl" />
+                <ProductImage product={{ name: 'حطب', art: 'logs-sidr', image: PHOTOS.sidr }} className="block aspect-square w-full rounded-3xl shadow-xl overflow-hidden" />
+                <ProductImage product={{ name: 'فحم أقراص', art: 'charcoal-briquette', image: PHOTOS.briquettes }} className="block aspect-[4/3] w-full rounded-3xl shadow-xl overflow-hidden" />
               </div>
               <div className="space-y-4">
-                <ProductArt variant="industrial-bags" title="فحم صناعي" className="block aspect-[4/3] w-full rounded-3xl shadow-xl" />
-                <ProductArt variant="logs-olive" title="حطب زيتون" className="block aspect-square w-full rounded-3xl shadow-xl" />
+                <ProductImage product={{ name: 'فحم صناعي', art: 'industrial-bags', image: PHOTOS.catIndustrial }} className="block aspect-[4/3] w-full rounded-3xl shadow-xl overflow-hidden" />
+                <ProductImage product={{ name: 'حطب', art: 'logs-olive', image: PHOTOS.acacia }} className="block aspect-square w-full rounded-3xl shadow-xl overflow-hidden" />
               </div>
             </div>
           </div>
