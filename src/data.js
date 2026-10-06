@@ -2,16 +2,16 @@
 
 // AI-generated demo photos (Higgsfield), stored in public/images.
 export const PHOTOS = {
-  acacia: '/images/acacia.webp',
-  sidr: '/images/sidr.webp',
-  logs: '/images/logs.webp',
-  charcoal: '/images/charcoal.webp',
-  briquettes: '/images/briquettes.webp',
-  industrial: '/images/industrial.webp',
-  catFirewood: '/images/cat-firewood.webp',
-  catCharcoal: '/images/cat-charcoal.webp',
-  catIndustrial: '/images/cat-industrial.webp',
-  hero: '/images/hero.webp',
+  acacia: 'images/acacia.webp',
+  sidr: 'images/sidr.webp',
+  logs: 'images/logs.webp',
+  charcoal: 'images/charcoal.webp',
+  briquettes: 'images/briquettes.webp',
+  industrial: 'images/industrial.webp',
+  catFirewood: 'images/cat-firewood.webp',
+  catCharcoal: 'images/cat-charcoal.webp',
+  catIndustrial: 'images/cat-industrial.webp',
+  hero: 'images/hero.webp',
 }
 
 export const CATEGORIES = [
