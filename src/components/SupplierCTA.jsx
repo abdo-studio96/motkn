@@ -50,7 +50,7 @@ export default function SupplierCTA({ onBecomeSupplier }) {
                 <ProductImage product={{ name: 'فحم أقراص', art: 'charcoal-briquette', image: PHOTOS.briquettes }} className="block aspect-[4/3] w-full rounded-3xl shadow-xl overflow-hidden" />
               </div>
               <div className="space-y-4">
-                <ProductImage product={{ name: 'فحم صناعي', art: 'industrial-bags', image: PHOTOS.catIndustrial }} className="block aspect-[4/3] w-full rounded-3xl shadow-xl overflow-hidden" />
+                <ProductImage product={{ name: 'فحم صناعي', art: 'industrial-bags', image: PHOTOS.industrial }} className="block aspect-[4/3] w-full rounded-3xl shadow-xl overflow-hidden" />
                 <ProductImage product={{ name: 'حطب', art: 'logs-olive', image: PHOTOS.acacia }} className="block aspect-square w-full rounded-3xl shadow-xl overflow-hidden" />
               </div>
             </div>

@@ -298,7 +298,7 @@ export function ProductImage({ product, className = '', eager = false }) {
       <img
         src={product.image}
         alt={product.name}
-        loading={eager ? 'eager' : 'lazy'}
+        loading={eager || product.image.startsWith('data:') ? 'eager' : 'lazy'}
         decoding="async"
         onError={() => setFailed(true)}
         className={`bg-sand-200 object-cover ${className}`}

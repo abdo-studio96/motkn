@@ -1,18 +1,19 @@
 // All content in this file is sample (demo) data for the interface only.
 
-// AI-generated demo photos (Higgsfield). If one fails to load, the SVG art is shown instead.
+// AI-generated demo photos (Higgsfield). Local copies live in public/images; the rest still load
+// from Higgsfield's CDN. If one fails to load, the SVG art is shown instead.
 const CDN = 'https://d8j0ntlcm91z4.cloudfront.net/user_3I2Raov2D23bJPBrxeutTeAQSTK/'
 export const PHOTOS = {
-  acacia: CDN + 'hf_20261006_091703_a3b5036e-06cf-4b2e-a832-94532b5f7699.png',
-  sidr: CDN + 'hf_20261006_091702_f607bc2d-545d-4691-b130-addd9647187b.png',
+  acacia: '/images/acacia.webp',
+  sidr: '/images/sidr.webp',
   olive: CDN + 'hf_20261006_091640_22ed9333-8c84-4c22-ab7b-0252c6b79c7d.png',
   charcoal: CDN + 'hf_20261006_091702_b26ebd71-687e-4829-80c6-e28b289dda72.png',
-  briquettes: CDN + 'hf_20261006_091640_40c80863-bc2a-4a37-8b36-1d930016a69d.png',
-  industrial: CDN + 'hf_20261006_091640_fd3b8e73-de65-4f90-823d-fb2cf611232b.png',
+  briquettes: '/images/briquettes.webp',
+  industrial: '/images/industrial.webp',
   catFirewood: CDN + 'hf_20261006_091741_c46a943d-5613-49ae-b909-2f42f33faa30.png',
   catCharcoal: CDN + 'hf_20261006_091712_4d583e43-9b2b-4897-9e28-c85883b4170c.png',
   catIndustrial: CDN + 'hf_20261006_091641_b39551da-12b5-41ea-a480-de4dae5ae29d.png',
-  hero: CDN + 'hf_20261006_091712_ded51ca1-3f69-439f-9891-d263b52c3045.png',
+  hero: '/images/hero.webp',
 }
 
 export const CATEGORIES = [
