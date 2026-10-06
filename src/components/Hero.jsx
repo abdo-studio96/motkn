@@ -1,4 +1,4 @@
-import { ProductImage } from './ProductArt'
+import { ProductImage } from './ProductImage'
 import { PHOTOS } from '../data'
 import Icon from './Icon'
 
@@ -56,11 +56,11 @@ export default function Hero({ onBecomeSupplier }) {
         {/* Visual collage */}
         <div className="relative mx-auto w-full max-w-lg animate-fade-up [animation-delay:150ms] lg:max-w-none">
           <div className="relative overflow-hidden rounded-[2rem] shadow-2xl shadow-black/40 ring-1 ring-white/10">
-            <ProductImage eager product={{ name: 'سيارات محمّلة بالحطب في ساحة مورد', art: 'logs-acacia', image: PHOTOS.hero }} className="block aspect-[4/3] w-full" />
+            <ProductImage eager product={{ name: 'سيارات محمّلة بالحطب في ساحة مورد', image: PHOTOS.hero }} className="block aspect-[4/3] w-full" />
             <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-forest-950/50 to-transparent" />
           </div>
           <div className="absolute -bottom-10 -right-2 w-[44%] animate-float overflow-hidden rounded-2xl shadow-xl shadow-black/40 ring-4 ring-forest-900 sm:-right-8">
-            <ProductImage eager product={{ name: 'فحم طبيعي', art: 'charcoal-lump', image: PHOTOS.charcoal }} className="block aspect-[4/3] w-full" />
+            <ProductImage eager product={{ name: 'فحم طبيعي', image: PHOTOS.charcoal }} className="block aspect-[4/3] w-full" />
           </div>
           <div className="absolute top-5 -left-2 flex items-center gap-2.5 rounded-2xl bg-paper/95 px-3.5 py-2.5 text-forest-900 shadow-xl backdrop-blur sm:-left-6">
             <span className="grid size-9 place-items-center rounded-xl bg-forest-100 text-forest-700">

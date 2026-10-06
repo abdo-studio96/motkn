@@ -1,6 +1,6 @@
 import { CATEGORIES, PRODUCTS } from '../data'
 import { useReveal } from '../hooks'
-import { ProductImage } from './ProductArt'
+import { ProductImage } from './ProductImage'
 import SectionHeading from './SectionHeading'
 import Icon from './Icon'
 

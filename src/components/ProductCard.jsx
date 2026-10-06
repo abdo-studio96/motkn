@@ -1,5 +1,5 @@
 import { CATEGORIES, formatPrice } from '../data'
-import { ProductImage } from './ProductArt'
+import { ProductImage } from './ProductImage'
 import Icon from './Icon'
 
 export const categoryName = (id) => CATEGORIES.find((c) => c.id === id)?.name

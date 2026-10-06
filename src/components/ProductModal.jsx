@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { formatPrice } from '../data'
 import Modal from './Modal'
 import Icon from './Icon'
-import { ProductImage } from './ProductArt'
+import { ProductImage } from './ProductImage'
 import { DemoBadge, VerifiedBadge, categoryName } from './ProductCard'
 
 export default function ProductModal({ product, onClose }) {
