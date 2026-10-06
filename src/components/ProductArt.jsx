@@ -195,7 +195,7 @@ function Briquettes({ uid }) {
       <rect x="250" y="70" width="120" height="150" rx="6" fill={`url(#${uid}box)`} opacity="0.9" />
       <rect x="250" y="70" width="120" height="16" rx="4" fill="#8f652f" opacity="0.6" />
       <rect x="272" y="120" width="76" height="44" rx="6" fill="#163f2b" />
-      <text x="310" y="140" textAnchor="middle" fontSize="15" fontWeight="700" fill="#f6eddb" fontFamily="Noto Kufi Arabic, sans-serif">فحم</text>
+      <text x="310" y="140" textAnchor="middle" fontSize="15" fontWeight="700" fill="#f6eddb" fontFamily="IBM Plex Sans Arabic, sans-serif">فحم</text>
       <text x="310" y="157" textAnchor="middle" fontSize="10" fill="#dfc592" fontFamily="IBM Plex Sans Arabic, sans-serif">أقراص · 5 كجم</text>
       <ellipse cx="190" cy="262" rx="150" ry="13" fill="#3b2416" opacity="0.22" />
       <g transform="translate(-20 40)">
@@ -230,7 +230,7 @@ function IndustrialBags({ uid }) {
         />
         <path d={`M${x + 12} ${top + 8} Q${cx} ${top} ${x + w - 12} ${top + 8}`} fill="none" stroke="#7a5629" strokeWidth="1.4" strokeDasharray="4 3" />
         <rect x={cx - 30} y={top + 18} width="60" height="34" rx="5" fill="#163f2b" />
-        <text x={cx} y={top + 34} textAnchor="middle" fontSize="12" fontWeight="700" fill="#f6eddb" fontFamily="Noto Kufi Arabic, sans-serif">فحم</text>
+        <text x={cx} y={top + 34} textAnchor="middle" fontSize="12" fontWeight="700" fill="#f6eddb" fontFamily="IBM Plex Sans Arabic, sans-serif">فحم</text>
         <text x={cx} y={top + 47} textAnchor="middle" fontSize="9" fill="#dfc592" fontFamily="IBM Plex Sans Arabic, sans-serif">20 كجم</text>
       </g>
     )

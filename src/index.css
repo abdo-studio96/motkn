@@ -2,7 +2,7 @@
 
 @theme {
   --font-sans: "IBM Plex Sans Arabic", system-ui, sans-serif;
-  --font-display: "Noto Kufi Arabic", "IBM Plex Sans Arabic", sans-serif;
+  --font-display: "IBM Plex Sans Arabic", system-ui, sans-serif;
 
   --color-forest-950: #0a1d15;
   --color-forest-900: #10301f;
